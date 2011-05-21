@@ -1,0 +1,23 @@
+Tables can also be created and populated by the results of a query in one create-table-as-select (CTAS) statement. The table created by CTAS is atomic, meaning that the table is not seen by other users until all the query results are populated. So other users will either see the table with the complete results of the query or will not see the table at all.
+
+CTASで作ったテーブルはpartition使えない
+
+
+add table partition で複数のパーティションを一度にしていすることはできなくなった
+
+if existsの指定で警告が出るとかでないとか。試してみたが出ない
+
+alterは型、名前をきっちりかく
+
+alterでデータの順番と変えると値も変わるので注意
+select *が何を反映しているのか注意
+
+alter table table_name touch よくわからない
+
+FAILED: Error in semantic analysis: Archiving methods are currently disabled. Please see the Hive wiki for more information about enabling archiving.
+
+simpleカラムを持つsimpleテーブルのsimpleviewからselectしたら×
+viewはリードオンリー
+
+
+
