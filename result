@@ -1,0 +1,23 @@
+join:
+	leftsmall:1468.544,1484.025
+	rightsmall:1747.555,1910.859
+semijoin:
+	leftsmall:1721.816
+
+outerjoin:
+	leftbig:1984.04
+	rightbig:1952.72
+
+left semi join is for 
+"select A.* from A where A.key in (select B.key from B);"
+
+map side join:
+
+
+mapside join and bucketed map join is for 
+using map only join.
+
+bucketed map join is only available when
+the num of buckets satisfies its conditions.
+
+http://svn.apache.org/repos/asf/hive/branches/branch-0.6/conf/hive-default.xml

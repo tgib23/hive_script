@@ -1,0 +1,8 @@
+Also it is best to put the largest table on the rightmost side of the join to get the best performance.
+
+
+
+Note that Hive only supports equi-joins.
+An equi-join, also known as an equijoin, is a specific type of comparator-based join, or theta join, that uses only equality comparisons in the join-predicate. Using other comparison operators (such as <) disqualifies a join as an equi-join.
+
+
