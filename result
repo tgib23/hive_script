@@ -1,6 +1,9 @@
-join:
+join normal table:
 	leftsmall:1468.544,1484.025
 	rightsmall:1747.555,1910.859
+join external table:
+	leftsmall:1619.279
+	rightsmall:1618.23
 semijoin:
 	leftsmall:1721.816
 
@@ -21,3 +24,11 @@ bucketed map join is only available when
 the num of buckets satisfies its conditions.
 
 http://svn.apache.org/repos/asf/hive/branches/branch-0.6/conf/hive-default.xml
+
+index
+	1m
+		nonindex:52
+		index:56
+	200m
+		noindex:375
+		index:375
