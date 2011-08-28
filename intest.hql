@@ -1,12 +1,15 @@
-drop index indexof_1mtest on 1mtest;
-drop index indexof_200mtest on 200mtest;
+drop index indexof_test on test_external;
+
+select col from test_external where col = 4023;
 
 
-create index indexof_1mtest
-	on table 1mtest(col)
+create index indexof_test
+	on table test_external(col)
 	AS 'COMPACT'
 	with deferred rebuild
 	stored as rcfile;
 
-alter index indexof_1mtest on 1mtest rebuild;
+alter index indexof_test on test_external rebuild;
+
+select col from test_external where col = 4023;
 

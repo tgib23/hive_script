@@ -32,3 +32,11 @@ index
 	200m
 		noindex:375
 		index:375
+	test
+		noindex:193,88
+		index:105,85
+
+external index
+	test
+		noindex:130,122
+		index:100,104

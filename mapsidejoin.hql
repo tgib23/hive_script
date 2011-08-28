@@ -8,4 +8,4 @@ create table mapside_join_test (
 ;
 
 insert overwrite table mapside_join_test
-select /*+ MAPJOIN(1m) */ 1m.col from 1mtest 1m join 200mtest 200m on 1m.col = 200m.col;
+select /*+ MAPJOIN(tt) */ tt.col from test tt join 1mtest 1m on tt.col = 1m.col;
