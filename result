@@ -38,5 +38,5 @@ index
 
 external index
 	test
-		noindex:130,122
-		index:100,104
+		noindex:130,122,121
+		index:100,104,105
